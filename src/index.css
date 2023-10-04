@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@layer components {
+
+  
+  .sidebar-icon {
+    @apply relative flex items-center justify-center 
+    h-12 w-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-800 
+    text-green-500 rounded-3xl  drop-shadow-lg
+    transition-all duration-200 cursor-pointer ease-linear shadow-lg;
+  }
+
+  .stack-icon {
+      @apply relative flex items-center justify-center 
+      h-12 w-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-800 
+      text-green-500 rounded-3xl  
+      transition-all duration-200 ease-linear shadow-lg;
+    
+  }
+
+  .resume-icon {
+    @apply relative flex items-center justify-center 
+    h-12 w-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-800 
+    text-green-500 rounded-3xl  
+    transition-all duration-200 ease-linear shadow-lg;
+  
+}
+
+  .project-icon {
+    @apply relative flex items-center justify-center 
+    h-12 w-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-white  dark:bg-gray-500
+    text-green-500 drop-shadow-xl  rounded-3xl  shadow-2xl
+    transition-all duration-200 cursor-pointer ease-linear ;
+  }
+
+  .project-img {
+    @apply relative flex items-center justify-center 
+       
+      
+    transition-all duration-200 ease-linear shadow-lg;
+  }
+
+  .sidebar-hr {
+    @apply bg-gray-200 dark:bg-gray-800 border border-gray-200 dark:border-gray-800 rounded-full my-2 h-12;
+  }
+
+  .logo-icon {
+    @apply hidden;
+  }
+
+  .dark-mode-icon {
+    @apply relative flex items-center justify-center 
+    h-12 w-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-800 
+     rounded-3xl hover:rounded-xl 
+    transition-all duration-200 cursor-pointer ease-linear ;
+  }
+
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max bottom-14 rounded-md
+    shadow-md text-white bg-gray-900 text-xs font-bold
+    transition-all duration-100 scale-0 origin-left;  
+
+  } 
+
+  .project-tooltip {
+    @apply absolute rounded-3xl text-left fold:text-xs  text-sm w-auto p-6 m-2 top-28
+    shadow-md text-gray-700 bg-white dark:text-white dark:bg-gray-900  font-bold
+    transition-all duration-300 scale-0 origin-top;  
+
+  }
+
+  .project-icon-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max top-8 sm:top-12 rounded-md
+    shadow-md text-white bg-gray-900 text-xs 
+    transition-all duration-300 scale-0 origin-left font-bold; 
+  }
+
+  .stack-icon-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max bottom-14 rounded-md
+    shadow-md text-white bg-gray-900 text-xs 
+    transition-all duration-100 scale-0 origin-left font-bold; 
+  }
+  
+
+
+
+  #root {
+    @apply dark:text-white text-gray-700 bg-gray-100 dark:bg-gray-800;
+  }
+
+  @screen sm {
+    .sidebar-icon {
+     @apply hover:bg-green-500 
+    hover:text-white hover:rounded-xl
+    mx-auto mt-2 mb-2 shadow-lg hover:-translate-y-1;
+    }
+
+    .stack-icon {
+      @apply  
+      
+     mx-auto mt-2 mb-2 shadow-lg;
+     }
+
+     .resume-icon {
+      @apply  
+       dark:hover:text-white hover:text-gray-600
+      mx-auto mt-2 mb-2 shadow-lg -translate-y-0.5 hover:translate-y-0
+    }
+
+    .project-icon {
+      @apply 
+      hover:rounded-xl dark:hover:text-white hover:text-gray-600
+     mx-auto mt-2 mb-2 shadow-lg hover:-translate-y-2;
+     }
+
+    .logo-icon {
+      @apply relative flex items-center justify-center 
+      h-12 w-12 mx-auto mt-2 mb-2;
+    }
+
+    .sidebar-hr {
+      @apply bg-gray-200 dark:bg-gray-800 border border-gray-200 dark:border-gray-800 rounded-full mx-2 my-0 h-0 ;
+    }
+
+    .sidebar-tooltip {
+      @apply left-14 bottom-0 
+  
+    } 
+
+    .project-tooltip {
+      @apply absolute rounded-3xl text-left  text-lg w-auto p-6 m-2 top-48
+      shadow-md text-gray-700 bg-white dark:text-white dark:bg-gray-900  font-bold
+      transition-all duration-100 scale-0 origin-top;  
+  
+    }
+
+    .content-container {
+      @apply shadow-2xl sm:shadow-lg flex-grow ml-0 sm:ml-16 p-4 rounded-2xl flex flex-col m-0 overflow-hidden h-full w-full bg-gray-300 dark:bg-gray-600;
+      
+    }
+
+    .content-list {
+      @apply flex flex-col items-center 
+      h-full w-full 
+      mt-0 ml-0 mx-auto px-0 pb-12 
+      overflow-y-scroll;
+    }
+
+    #root {
+      @apply dark:text-white text-gray-700 bg-gray-100 dark:bg-gray-800;
+    }
+
+
+
+  }
+
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-green-500;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px; /* Rounded corners for aesthetic purposes */
+    border: 5px solid transparent; /* Make the border transparent to control thickness */
+    background-clip: content-box; /* Ensure the background doesn't cover the border */
+  
+}
+
