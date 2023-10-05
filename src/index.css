@@ -19,12 +19,12 @@
   }
 
   .stack-icon {
-    @apply relative flex items-center justify-center h-12 w-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-800 text-green-500 rounded-3xl shadow-md transition-all duration-200 ease-linear;
+    @apply relative flex items-center justify-center h-14 w-14 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-900 text-green-500 rounded-3xl shadow-md transition-all duration-200 ease-linear;
 
   }
 
   .resume-icon {
-    @apply relative flex items-center justify-center h-12 w-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-800 text-green-500 rounded-3xl transition-all duration-200 ease-linear shadow-lg;
+    @apply relative flex items-center justify-center h-16 w-16 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-900 text-green-500 rounded-3xl transition-all duration-200 ease-linear shadow-lg;
   }
 
   .project-icon {
