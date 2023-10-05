@@ -5,11 +5,11 @@ const TooltipImage = ({ imgUrl, title, text }) => {
   return (
     <div className="">
    <div className='relative project-img group rounded-custom'> 
-      <img
+      {/* <img
         className="rounded-custom hover:grayscale-0 shadow-xl w-full h-full object-cover "
         src={imgUrl}
         alt={`${title}`}
-      />
+      /> */}
       <div className='flex sm:gap-2 absolute top-1 right-5'>
        <ProjectInfoIcon text={"Link"} icon={<TbEyeQuestion size="28" className='w-6 h-6 drop-shadow-lg' />} />
         <ProjectInfoIcon text={"Docs"} icon={<TbMessage2Question size="28" className='w-6 h-6 drop-shadow-lg' />} />
