@@ -15,7 +15,7 @@
 @layer components {
 
   .sidebar-icon {
-    @apply relative flex items-center justify-center h-12 w-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-800 text-green-500 rounded-3xl shadow-lg transition-all duration-200 ease-linear;
+    @apply relative flex items-center justify-center h-12 w-12 fold:w-8 fold:h-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-800 text-green-500 rounded-3xl shadow-lg transition-all duration-200 ease-linear;
   }
 
   .stack-icon {
@@ -44,7 +44,7 @@
   }
 
   .dark-mode-icon {
-    @apply relative flex items-center justify-center h-12 w-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-800 rounded-3xl hover:rounded-xl transition-all duration-200 ease-linear;
+    @apply relative flex items-center justify-center h-12 w-12 fold:w-10 fold:h-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-800 rounded-3xl hover:rounded-xl transition-all duration-200 ease-linear;
   }
 
   .sidebar-tooltip {
