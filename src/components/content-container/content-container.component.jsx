@@ -9,9 +9,6 @@ const ContentContainer = () => {
       <div className="content-list">
         <div className="grid gap-y-40 ">
           {projects.map((project) => {
-            {
-              console.log(project.icons);
-            }
             return <ProjectsContainer key={project.id} project={project} />;
           })}
         </div>
