@@ -6,7 +6,7 @@ const ProjectsContainer = ({project}) => {
 
     return(
         <div key={id} className="grid gap-x-20 lg:grid-cols-2 sm:items-center sm:text-right justify-between">
-        <TooltipImage text={text} imgUrl={imgUrl} title={title} />
+        {/* <TooltipImage text={text} imgUrl={imgUrl} title={title} /> */}
 
         
         <div className="flex justify-evenly shadow-lg bg-white dark:bg-gray-500 fold:p-0 p-4 rounded-3xl">
