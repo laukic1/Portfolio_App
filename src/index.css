@@ -17,8 +17,8 @@
   .sidebar-icon {
     @apply relative flex items-center justify-center 
     h-12 w-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-gray-400 dark:bg-gray-800 
-    text-green-500 rounded-3xl  drop-shadow-lg
-    transition-all duration-200 cursor-pointer ease-linear shadow-lg;
+    text-green-500 rounded-3xl  shadow-lg
+    transition-all duration-200 cursor-pointer ease-linear;
   }
 
   .stack-icon {
@@ -37,12 +37,12 @@
   
 }
 
-  /* .project-icon {
+  .project-icon {
     @apply relative flex items-center justify-center 
     h-12 w-12 mx-auto mt-2 mb-2 ml-2 mr-2 bg-white  dark:bg-gray-500
     text-green-500 rounded-3xl
     transition-all duration-200 cursor-pointer ease-linear ;
-  } */
+  }
 
   .project-img {
     @apply relative flex items-center justify-center 
@@ -68,27 +68,27 @@
 
   .sidebar-tooltip {
     @apply absolute w-auto p-2 m-2 min-w-max bottom-14 rounded-md
-    shadow-md text-white bg-gray-900 text-xs font-bold
+     text-white bg-gray-900 text-xs font-bold
     transition-all duration-100 scale-0 origin-left;  
 
   } 
 
   .project-tooltip {
     @apply absolute rounded-3xl text-left fold:text-xs  text-sm w-auto p-6 m-2 top-28
-    shadow-md text-gray-700 bg-white dark:text-white dark:bg-gray-900  font-bold
+     text-gray-700 bg-white dark:text-white dark:bg-gray-900  font-bold
     transition-all duration-300 scale-0 origin-top;  
 
   }
 
   .project-icon-tooltip {
-    @apply absolute w-auto p-2 m-2 min-w-max top-8 sm:top-12 rounded-md
-    shadow-md text-white bg-gray-900 text-xs 
+    @apply absolute w-auto p-2 m-2 min-w-max top-8 top-12 rounded-md
+     text-white bg-gray-900 text-xs 
     transition-all duration-300 scale-0 origin-left font-bold; 
   }
 
   .stack-icon-tooltip {
     @apply absolute w-auto p-2 m-2 min-w-max bottom-14 rounded-md
-    shadow-md text-white bg-gray-900 text-xs 
+     text-white bg-gray-900 text-xs 
     transition-all duration-100 scale-0 origin-left font-bold; 
   }
   
@@ -103,25 +103,25 @@
     .sidebar-icon {
      @apply hover:bg-green-500 
     hover:text-white hover:rounded-xl
-    mx-auto mt-2 mb-2 shadow-lg hover:-translate-y-1;
+    mx-auto mt-2 mb-2 hover:-translate-y-1;
     }
 
     .stack-icon {
       @apply  
       
-     mx-auto mt-2 mb-2 shadow-lg;
+     mx-auto mt-2 mb-2;
      }
 
      .resume-icon {
       @apply  
        dark:hover:text-white hover:text-gray-600
-      mx-auto mt-2 mb-2 shadow-lg -translate-y-0.5 hover:translate-y-0
+      mx-auto mt-2 mb-2 -translate-y-0.5 hover:translate-y-0
     }
 
     .project-icon {
       @apply 
       hover:rounded-xl dark:hover:text-white hover:text-gray-600
-     mx-auto mt-2 mb-2 shadow-lg hover:-translate-y-2;
+     mx-auto mt-2 mb-2  hover:-translate-y-2;
      }
 
     .logo-icon {
@@ -146,7 +146,7 @@
     }
 
     .content-container {
-      @apply shadow-2xl sm:shadow-lg flex-grow ml-0 sm:ml-16 p-4 rounded-2xl flex flex-col m-0 overflow-hidden h-full w-full bg-gray-300 dark:bg-gray-600;
+      @apply  shadow-lg flex-grow ml-16 p-4 rounded-2xl flex flex-col m-0 overflow-hidden h-full w-full bg-gray-300 dark:bg-gray-600;
       
     }
 
