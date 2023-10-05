@@ -1,6 +1,6 @@
-import KatataImage from "./assets/project2.jpg";
-import DianeliImage from "./assets/project1.jpg";
-import AspectaImage from "./assets/project3.jpg";
+import KatataImage from "./assets/project2.png";
+import DianeliImage from "./assets/project1.png";
+import AspectaImage from "./assets/project3.png";
 import { BiLogoReact, BiLogoNodejs } from "react-icons/bi";
 import { TbBrandFirebase, TbCircleLetterD } from "react-icons/tb";
 import { DiCss3, DiSass } from "react-icons/di";
