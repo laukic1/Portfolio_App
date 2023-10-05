@@ -1,5 +1,7 @@
-import ProjectInfoIcon from "../project-info-icon/project-info-icon.component";
+//import ProjectInfoIcon from "../project-info-icon/project-info-icon.component";
 import { TbEyeQuestion, TbMessage2Question } from "react-icons/tb";
+import SideBarIcon from '../side-bar-icon/side-bar-icon-component';
+
 // eslint-disable-next-line react/prop-types
 const TooltipImage = ({ imgUrl, title, text }) => {
   return (
@@ -11,8 +13,8 @@ const TooltipImage = ({ imgUrl, title, text }) => {
         alt={`${title}`}
       />
       <div className='flex sm:gap-2 absolute top-1 right-5'>
-       <ProjectInfoIcon text={"Link"} icon={<TbEyeQuestion size="28" className='w-6 h-6 drop-shadow-lg' />} />
-        <ProjectInfoIcon text={"Docs"} icon={<TbMessage2Question size="28" className='w-6 h-6 drop-shadow-lg' />} />
+       <SideBarIcon text={"Link"} icon={<TbEyeQuestion size="28" className='w-6 h-6 drop-shadow-lg' />} />
+        <SideBarIcon text={"Docs"} icon={<TbMessage2Question size="28" className='w-6 h-6 drop-shadow-lg' />} />
         </div>
     <span className='transition-all duration-500 project-tooltip z-30 group-hover:scale-100'>{text}</span>
 
