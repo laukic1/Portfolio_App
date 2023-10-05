@@ -1,6 +1,6 @@
 import ProjectInfoIcon from "../project-info-icon/project-info-icon.component";
 import { TbEyeQuestion, TbMessage2Question } from "react-icons/tb";
-
+// eslint-disable-next-line react/prop-types
 const TooltipImage = ({ imgUrl, title, text }) => {
   return (
     <div className="">

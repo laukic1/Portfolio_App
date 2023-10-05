@@ -1,7 +1,8 @@
 import StackIcon from "../stack-icon/stack-icon.component";
 import TooltipImage from "../tooltip-image/tooltip-image.component";
-
+// eslint-disable-next-line react/prop-types
 const ProjectsContainer = ({project}) => {
+  // eslint-disable-next-line react/prop-types
     const { id, text, imgUrl, title, icons } = project;
 
     return(
@@ -11,7 +12,9 @@ const ProjectsContainer = ({project}) => {
         
         <div className="flex justify-evenly shadow-lg bg-white dark:bg-gray-500 fold:p-0 p-4 rounded-3xl">
        
-        {icons.map((IconComponent, index) => {
+        {
+          // eslint-disable-next-line react/prop-types
+          icons.map((IconComponent, index) => {
           return (
             <span key={index} className='dark:text-white'>{<StackIcon text={IconComponent.tooltip} icon={<IconComponent.icon className='fold:w-5 fold:h-5 w-6 h-6 sm:w-8 sm:h-8' />} />}</span>
             
