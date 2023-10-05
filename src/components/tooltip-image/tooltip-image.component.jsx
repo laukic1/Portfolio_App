@@ -10,10 +10,10 @@ const TooltipImage = ({ imgUrl, title, text }) => {
         src={imgUrl}
         alt={`${title}`}
       />
-      {/* <div className='flex sm:gap-2 absolute top-1 right-5'>
+      <div className='flex sm:gap-2 absolute top-1 right-5'>
        <ProjectInfoIcon text={"Link"} icon={<TbEyeQuestion size="28" className='w-6 h-6 drop-shadow-lg' />} />
         <ProjectInfoIcon text={"Docs"} icon={<TbMessage2Question size="28" className='w-6 h-6 drop-shadow-lg' />} />
-        </div> */}
+        </div>
     <span className='transition-all duration-500 project-tooltip z-30 group-hover:scale-100'>{text}</span>
 
       </div>
