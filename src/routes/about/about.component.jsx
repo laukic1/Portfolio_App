@@ -34,12 +34,12 @@ const About = () => {
          
 <img className="lg:w-1/2 w-1/2" src={skillsImg} alt="profile-img" />
 </div> 
-           <div className='grid grid-cols-5 lg:grid-cols-5'>
+           <div className='grid grid-cols-5 lg:grid-cols-5 place-self-center pr-1'>
            
             {
                 techStackIcons.slice(0,5).map((StackIcons, index) => (
                     
-                    <span key={index}><SkillStackIcon icon={<StackIcons size='38' className='fold:w-5 fold:h-5 animate-bounce-slower' />}/></span>
+                    <span key={index}><SkillStackIcon icon={<StackIcons size='30' className='fold:w-5 fold:h-5 animate-bounce-slower' />}/></span>
                 ))
                 
             }
@@ -47,7 +47,7 @@ const About = () => {
             {
               techStackIcons.slice(5,10).map((StackIcons, index) => (
                     
-                    <span key={index}><SkillStackIcon icon={<StackIcons size='38' className='fold:w-5 fold:h-5 animate-bounce-slow' />}/></span>
+                    <span key={index}><SkillStackIcon icon={<StackIcons size='30' className='fold:w-5 fold:h-5 animate-bounce-slow' />}/></span>
                 ))
                 
             }
