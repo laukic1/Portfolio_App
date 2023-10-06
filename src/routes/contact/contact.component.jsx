@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 import { motion as m } from "framer-motion";
 
@@ -24,7 +25,24 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-  }
+    emailjs.sendForm(
+        "service_d66x8i8",
+        "template_7ue8775",
+        form.current,
+        "te5SU7euBFO2JNMc9"
+    )
+    .then(
+        (result) => {
+        console.log(result.text);
+        e.target.reset();
+        console.log("message sent")
+        
+    },
+    (error) => {
+        console.log(error.text);
+    }
+    );
+  };
 
   return (
     <m.div
@@ -80,7 +98,7 @@ const Contact = () => {
       <input className='bg-gray-400 text-gray-800 dark:bg-white rounded-md mb-4 p-1 fold:m-1' type="email" name="user_email" />
       <label>Message</label>
       <textarea className='bg-gray-400 text-gray-800 dark:bg-white rounded-md mb-4 p-1 fold:m-1' name="message" />
-      <button type="submit" value="Send">Send</button>
+      <button className='bg-green-400 rounded-2xl mt-6 pt-2 pb-2 lg:hover:bg-green-500' type="submit" value="Send">Send</button>
     </form>
             
             </div>
