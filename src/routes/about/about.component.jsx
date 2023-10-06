@@ -86,12 +86,12 @@ const About = () => {
                 alt="profile-img"
               />
             </div>
-           <Link target='_blank' to='https://www.dropbox.com/scl/fi/vlcdlxt5dgfg1v3vpddda/resume.pdf?rlkey=raze4oe37rfslkhom3o171m13&dl=0'><span className="flex justify-center">
-              <ResumeButton
+           <span className="flex justify-center">
+           <Link target='_blank' to='https://www.dropbox.com/scl/fi/vlcdlxt5dgfg1v3vpddda/resume.pdf?rlkey=raze4oe37rfslkhom3o171m13&dl=0'><ResumeButton
                 text={"View Resume"}
                 icon={<GiClick size="38" className="animate-pulse" />}
-              />
-            </span></Link>
+              /></Link>
+            </span>
           </div>
         </div>
       </div>

@@ -2,10 +2,15 @@ import ProjectInfoIcon from "../project-info-icon/project-info-icon.component";
 import { FaEye } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
-import { Link } from "react-router-dom";
+import { useState } from "react";
+
+import { Link, useNavigate } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 const TooltipImage = ({ imgUrl, title, text, website, github }) => {
+
+
+
   return (
     <div className="">
       <div className="relative project-img group rounded-custom">
@@ -13,6 +18,7 @@ const TooltipImage = ({ imgUrl, title, text, website, github }) => {
           className="rounded-custom hover:grayscale-0 shadow-xl w-full h-full object-cover "
           src={imgUrl}
           alt={`${title}`}
+          
         />
         <div className="flex sm:gap-2 absolute top-1 right-5">
           {github && (
@@ -20,14 +26,18 @@ const TooltipImage = ({ imgUrl, title, text, website, github }) => {
               <ProjectInfoIcon
                 text={"Code"}
                 icon={<AiFillGithub className="w-6 h-6 drop-shadow-lg" />}
+             
+
               />
             </Link>
           )}
 
-          <Link target="_blank" to={website}>
+          <Link target="_blank" to={website} >
             <ProjectInfoIcon
               text={"Link"}
               icon={<FaEye className="w-6 h-6 drop-shadow-lg" />}
+   
+
             />
           </Link>
         </div>
