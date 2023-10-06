@@ -11,7 +11,7 @@ const TypewriterEffect = () => {
       
     <div>
    
-        <h1 className='text-green-500' style={{ paddingBottom: '10rem', padding: '0.5em', margin: 'auto 0', fontWeight: 'bold', textAlign: "center"  }}>
+        <h1 className='text-green-500 lg:text-2xl sm:text-xl ' style={{ paddingBottom: '10rem', padding: '0.5em', margin: 'auto 0', fontWeight: 'bold', textAlign: "center"  }}>
         { " Developer who is " }
         <span className='text-gray-800 dark:text-white' style={{ fontWeight: 'bold',}}>
           {/* Style will be inherited from the parent element */}

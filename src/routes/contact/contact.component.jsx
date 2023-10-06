@@ -43,10 +43,10 @@ const Contact = () => {
          
          <img className="lg:w-1/3 w-1/2" src={ContactIcon}  alt="profile-img" />
          </div> 
-         <div className=' flex flex-col  gap-10 place-self-center bg-white shadow-lg dark:bg-gray-500 fold:p-4 p-4 rounded-3xl'>
+         <div className=' flex flex-col w-full h-full gap-10 place-self-center bg-white shadow-lg dark:bg-gray-500 fold:p-4 p-4 rounded-3xl'>
               <div className='flex flex-col items-start gap-4'>
-              <span className='flex items-center justify-start fold:gap-0 gap-6'><span  onClick={PhoneCallHandler}><ContactPageIcon  icon={<BsFillPhoneFill size='28' className='fold:w-5 fold:h-5'  />}  /></span> <span className='fold:text-xs'>(386) 40 323 077</span></span>
-              <span className='flex items-center justify-start fold:gap-0 gap-6'><span onClick={SendEmailButtonHandler}><ContactPageIcon icon={<IoMdMail size='28' className='fold:w-5 fold:h-5' />} /></span><span className='fold:text-xs'>dlauko96@gmail.com</span></span>
+              <span className='flex items-center justify-start fold:gap-0 gap-6'><span  onClick={PhoneCallHandler}><ContactPageIcon  icon={<BsFillPhoneFill size='28' className='fold:w-5 fold:h-5'  />}  /></span> <span className='lg:text-xl fold:text-xs'>(386) 40 323 077</span></span>
+              <span className='flex items-center justify-start fold:gap-0 gap-6'><span onClick={SendEmailButtonHandler}><ContactPageIcon icon={<IoMdMail size='28' className='fold:w-5 fold:h-5' />} /></span><span className='lg:text-xl fold:text-xs'>dlauko96@gmail.com</span></span>
 
               </div>
             <div className='flex gap-2 justify-end'>
@@ -58,23 +58,28 @@ const Contact = () => {
             </div>
             </div>
         </div>
+        
+
+
 
         <div className="grid lg:grid-cols-2 gap-20 sm:items-center sm:text-left justify-center">
           
-         
-          
+
+
           <div className='flex flex-col justify-center items-center gap-10'>
          
          <img className="lg:w-1/2 w-1/2" src={HandshakeIcon}  alt="profile-img" />
          </div> 
          <div className='place-self-center bg-white shadow-lg dark:bg-gray-500 fold:p-0 p-4 rounded-3xl'>
-         <form ref={form} onSubmit={sendEmail} className='flex flex-col fold:p-2  '>
+         <form ref={form} onSubmit={sendEmail} className='flex flex-col fold:p-2 gap-1'>
+         <div><h2 className='place-self-center font-bold text-3xl justify-center'>{`LET'S GET IN TOUCH`}</h2></div>
+
       <label>Name</label>
-      <input className='bg-gray-400 text-gray-800 dark:bg-white rounded-md' type="text" name="user_name" />
+      <input className='bg-gray-400 text-gray-800 dark:bg-white rounded-md mb-4' type="text" name="user_name" />
       <label>Email</label>
-      <input className='bg-gray-400 text-gray-800 dark:bg-white rounded-md' type="email" name="user_email" />
+      <input className='bg-gray-400 text-gray-800 dark:bg-white rounded-md mb-4' type="email" name="user_email" />
       <label>Message</label>
-      <textarea className='bg-gray-400 text-gray-800 dark:bg-white rounded-md' name="message" />
+      <textarea className='bg-gray-400 text-gray-800 dark:bg-white rounded-md fold:p-4 p-10 mb-4' name="message" />
       <button type="submit" value="Send">Send</button>
     </form>
             
