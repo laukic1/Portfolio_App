@@ -23,6 +23,8 @@ export const projects = [
       { icon: SiStyledcomponents, tooltip: "Styled Components" },
       { icon: TbBrandFirebase, tooltip: "Firebase" },
     ],
+    website: 'https://katata-fashion.netlify.app/',
+    github: "https://github.com/laukic1/KATATA_Clothing_eCommerce_Store/tree/master"
   },
   {
     id: 2,
@@ -37,6 +39,9 @@ export const projects = [
       { icon: DiCss3, tooltip: "CSS" },
       { icon: SiHtml5, tooltip: "HTML" },
     ],
+    website: 'https://www.dianelistudio.si/',
+    github: "https://github.com/laukic1/Dianeli_Nail_Studio_Website"
+
   },
   {
     id: 3,
@@ -51,6 +56,8 @@ export const projects = [
       { icon: IoLogoJavascript, tooltip: "Javascript" },
       { icon: DiCss3, tooltip: "CSS" },
     ],
+    website: 'https://aspecta.si/',
+
   },
 ];
 

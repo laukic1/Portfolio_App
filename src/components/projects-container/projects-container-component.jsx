@@ -3,14 +3,14 @@ import TooltipImage from "../tooltip-image/tooltip-image.component";
 // eslint-disable-next-line react/prop-types
 const ProjectsContainer = ({ project }) => {
   // eslint-disable-next-line react/prop-types
-  const { id, text, imgUrl, title, workflow1, workflow2, icons } = project;
+  const { id, text, imgUrl, title, workflow1, workflow2, icons, github, website } = project;
 
   return (
     <div
       key={id}
       className="grid gap-x-20 lg:grid-cols-2 sm:items-center sm:text-right justify-between"
     >
-      <TooltipImage text={text} imgUrl={imgUrl} title={title} />
+      <TooltipImage text={text} imgUrl={imgUrl} title={title} github={github} website={website} />
 
 <div className='flex flex-col gap-4'>
 <div className="flex flex-col text-left justify-evenly bg-white dark:bg-gray-500 fold:text-xs sm:text-sm lg:text-base fold:p-2 p-4 rounded-3xl">

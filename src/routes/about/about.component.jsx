@@ -8,6 +8,9 @@ import { techStackIcons } from "../../data";
 import SkillStackIcon from "../../components/skill-stack-icon/skill-stack-icon.component";
 import { GiClick } from "react-icons/gi";
 import ResumeButton from "../../components/resume-button/resume-button.component";
+
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <m.div
@@ -83,12 +86,12 @@ const About = () => {
                 alt="profile-img"
               />
             </div>
-            <span className="flex justify-center">
+           <Link target='_blank' to='https://www.dropbox.com/scl/fi/vlcdlxt5dgfg1v3vpddda/resume.pdf?rlkey=raze4oe37rfslkhom3o171m13&dl=0'><span className="flex justify-center">
               <ResumeButton
                 text={"View Resume"}
                 icon={<GiClick size="38" className="animate-pulse" />}
               />
-            </span>
+            </span></Link>
           </div>
         </div>
       </div>

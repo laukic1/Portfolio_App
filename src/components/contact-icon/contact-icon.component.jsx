@@ -10,7 +10,7 @@ export const ContactPageIcon = ({ icon }) => {
   export const ContactPageSendIcon = ({ sendIcon, text }) => {
     return <div className='sidebar-icon w-12 h-16  group hover:animate-none animate-bounce'>
     {sendIcon}
-    <span className='project-icon-tooltip group-hover:scale-100'>{text}</span>
+    <span className='hidden lg:block lg:project-icon-tooltip group-hover:scale-100'>{text}</span>
     </div>;
   };
   
