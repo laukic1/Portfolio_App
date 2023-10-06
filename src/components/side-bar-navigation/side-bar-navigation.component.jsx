@@ -6,7 +6,7 @@ import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import Logo from '../../assets/logo.svg';
 import ThemeIcon from "../theme-icon/theme-icon.component";
 
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { motion as m } from "framer-motion";
 
@@ -32,7 +32,7 @@ const SideBar = () => {
     </m.div>
     
     </div>
-    <Outlet />
+
     </>
   );
 };

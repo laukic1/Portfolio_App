@@ -6,31 +6,34 @@ import Navigation from "./routes/navigation/navigation.component";
 import About from "./routes/about/about.component";
 import Contact from "./routes/contact/contact.component";
 
+import { ScrollToTop } from "./hooks/scroll-to-top.hook";
+
 import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
+  BrowserRouter,
   Route,
+  Routes,
+  
 } from "react-router-dom";
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' element={<Navigation />}>
-      <Route index element={<Home />} />
-     <Route path='projects' element={<Projects />} />
-     <Route path='about' element={<About />} />
-     <Route path='contact' element={<Contact />} />
-    </Route>
-  )
-
-)
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="flex">
-      <RouterProvider router={router} />
-      
+    <ScrollToTop />
+    <Routes>
+      <Route path='/' element={<Navigation />}>
+    
+    
+    <Route index element={<Home />} />
+   <Route path='projects' element={<Projects />} />
+   <Route path='about' element={<About />} />
+   <Route path='contact' element={<Contact />} />
+  </Route>
+     
+  </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,6 +1,7 @@
 import TypewriterEffect from "../../components/typewriter-effect/typewritter-effect.component";
 import { motion as m } from "framer-motion";
 
+
 const Home = () => {
 return (
     <m.div
